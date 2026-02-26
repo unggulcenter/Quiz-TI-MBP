@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #242424; -webkit-text-stroke: #242424; background-color: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #242424; -webkit-text-stroke: #242424; background-color: #ffffff; min-height: 16.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="id"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Kuis Online TI MBP - 120 Soal&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; background-color: #f0f2f5; color: #333; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.container { max-width: 800px; margin: 30px auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1 { color: #1a73e8; text-align: center; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.hidden { display: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.form-group { margin-bottom: 15px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>label { display: block; font-weight: bold; margin-bottom: 5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>input[type="text"] { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>button { width: 100%; background: #1a73e8; color: white; border: none; padding: 12px; cursor: pointer; border-radius: 6px; font-size: 18px; font-weight: bold; transition: background 0.3s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>button:hover { background: #1557b0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.question { background: #fafafa; margin-bottom: 25px; padding: 20px; border-left: 5px solid #1a73e8; border-radius: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.options label { display: block; margin: 10px 0; padding: 10px; border: 1px solid #eee; border-radius: 4px; cursor: pointer; transition: background 0.2s; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.options label:hover { background: #f1f8ff; border-color: #1a73e8; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>#result-area { text-align: center; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.score { font-size: 48px; color: #1a73e8; font-weight: bold; margin: 20px 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Kuis Teknologi Informasi&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Bagian Login --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="setup"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p style="text-align:center;"&gt;Selamat datang! Masukkan identitas Anda untuk memulai kuis acak 20 soal.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="userName"&gt;NAMA LENGKAP:&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;input type="text" id="userName" placeholder="Contoh: Budi Santoso"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="form-group"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;label for="userNPM"&gt;NPM:&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;input type="text" id="userNPM" placeholder="Contoh: 202401001"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button onclick="startQuiz()"&gt;Mulai Kuis&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Bagian Pertanyaan --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="quiz-area" class="hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="header-info" style="margin-bottom:20px; font-weight:bold; color: #555;"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div id="questions-container"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button onclick="calculateScore()"&gt;Kirim Jawaban &amp; Lihat Nilai&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;!-- Bagian Hasil --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="result-area" class="hidden"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Hasil Kuis Anda&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p id="summary-text"&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="score" id="final-score"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p id="correct-count"&gt;&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button onclick="location.reload()" style="background:#6c757d;"&gt;Coba Lagi (Soal Akan Diacak Kembali)&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>// Bank Soal Lengkap dari Sumber [1-36]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>const bankSoal = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Bagian 1: Sejarah</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa tokoh yang dikenal sebagai 'Bapak Komputer'?", a: "Alan Turing", b: "Charles Babbage", c: "Leonard Kleinrock", d: "Tim Berners-Lee", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Mesin mekanik abad ke-19 yang menjadi cetak biru logika komputer modern disebut...", a: "ENIAC", b: "Difference Engine", c: "Analytical Engine", d: "Abacus", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa programmer komputer pertama di dunia?", a: "Grace Hopper", b: "Ada Lovelace", c: "Elon Musk", d: "Alan Turing", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Komputer elektronik pertama di dunia yang menggunakan ribuan tabung vakum adalah...", a: "UNIVAC", b: "ENIAC", c: "Altair", d: "IBM PC", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Komputer generasi pertama (1940-1950) menggunakan komponen utama berupa...", a: "Transistor", b: "IC", c: "Mikroprosesor", d: "Tabung Vakum", correct: "d" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Komponen yang menggantikan tabung vakum pada generasi kedua (1950-1960) adalah...", a: "IC", b: "Mikroprosesor", c: "Transistor", d: "Chip Silikon", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Penggunaan Integrated Circuit (IC) menandai dimulainya komputer generasi...", a: "Pertama", b: "Kedua", c: "Ketiga", d: "Keempat", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Penemuan mikroprosesor (Intel 4004) melahirkan komputer...", a: "Raksasa", b: "Generasi Kelima", c: "Komputer Pribadi (PC)", d: "Supercomputer", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "ARPANET beroperasi pada tahun...", a: "1945", b: "1956", c: "1969", d: "1983", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Pesan pertama yang dikirim melalui ARPANET hanya terkirim...", a: "'LO'", b: "'HI'", c: "'LOG'", d: "'IN'", correct: "a" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa ilmuwan yang menciptakan World Wide Web (WWW) pada tahun 1989?", a: "Vinton Cerf", b: "Tim Berners-Lee", c: "Steve Jobs", d: "Larry Page", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Protokol standar TCP/IP diperkenalkan secara luas pada tahun...", a: "1969", b: "1970", c: "1983", d: "1991", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Istilah 'Artificial Intelligence' (AI) resmi diperkenalkan pada konferensi di...", a: "Stanford", b: "MIT", c: "Dartmouth College", d: "Harvard", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Tahun berapa istilah 'Artificial Intelligence' pertama kali diperkenalkan?", a: "1950", b: "1956", c: "1966", d: "1970", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Uji untuk mengukur kemampuan mesin meniru perilaku cerdas manusia disebut...", a: "Tes Babbage", b: "Tes Lovelace", c: "Tes Turing", d: "Tes McCarthy", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Era di mana perkembangan AI melambat karena kurang dana dan data disebut...", a: "AI Summer", b: "AI Fall", c: "AI Winter", d: "AI Spring", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "IBM Deep Blue mengalahkan juara catur dunia Garry Kasparov pada tahun...", a: "1980", b: "1990", c: "1997", d: "2005", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Chatbot pertama tahun 1966 yang mampu melakukan percakapan sederhana bernama...", a: "ChatGPT", b: "Siri", c: "ELIZA", d: "Alexa", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Revolusi Industri 1.0 ditandai dengan penggunaan...", a: "Listrik", b: "Mesin Uap", c: "Komputer", d: "Robot", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Revolusi Industri 2.0 ditandai dengan...", a: "Mesin uap", b: "Produksi massal &amp; tenaga listrik", c: "Internet", d: "AI", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Otomatisasi sistem digital dan komputer adalah ciri Revolusi Industri...", a: "1.0", b: "2.0", c: "3.0", d: "4.0", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Revolusi Industri 4.0 mengintegrasikan teknologi berikut, KECUALI...", a: "AI &amp; IoT", b: "Big Data", c: "Cloud Computing", d: "Mesin Uap manual", correct: "d" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Internet mulai dikenal luas di Indonesia awal 1990-an melalui...", a: "IndoNet", b: "Paguyuban Network", c: "Nusantara Net", d: "UI-Network", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Alat hitung kuno yang dianggap dasar awal pemrosesan informasi adalah...", a: "Kalkulator", b: "Abacus (Sempoa)", c: "Slide Rule", d: "Punch Card", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Apa kepanjangan dari IoT menurut Kevin Ashton (1999)?", a: "Internet of Task", b: "Internet of Things", c: "Integration of Tech", d: "International Things", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Era Web 2.0 (2000-2005) memungkinkan pengguna untuk...", a: "Hanya baca berita", b: "Berpartisipasi aktif &amp; media sosial", c: "Pakai tabung vakum", d: "Matikan internet", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Teknologi penyimpanan data yang diakses via internet adalah...", a: "Harddisk", b: "Cloud Computing", c: "Flashdisk", d: "Floppy Disk", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Pencapaian besar AI pada tahun 2022 adalah munculnya...", a: "Deep Blue", b: "Siri", c: "ChatGPT", d: "AlphaGo", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Alat komunikasi jarak jauh kode Morse era Elektromekanis adalah...", a: "Telepon", b: "Telegraf", c: "Radio", d: "Televisi", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa penemu telepon pada era Elektromekanis?", a: "Samuel Morse", b: "Alexander Graham Bell", c: "Guglielmo Marconi", d: "Thomas Edison", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Alamat website pertama di dunia adalah...", a: "google.com", b: "info.cern.ch", c: "arpanet.gov", d: "yahoo.com", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa yang menggunakan konsep 'Sains Puitis' menurut infografis?", a: "Charles Babbage", b: "Ada Lovelace", c: "Alan Turing", d: "John McCarthy", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Jenis AI yang dirancang untuk tugas spesifik disebut...", a: "General AI", b: "Super AI", c: "Narrow AI", d: "Self-aware AI", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "AI yang memiliki kesadaran dan perasaan sendiri disebut...", a: "Reactive", b: "Limited Memory", c: "Theory of Mind", d: "Self-Aware AI", correct: "d" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Salah satu tantangan etika dalam AI adalah...", a: "Kecepatan akses", b: "Harga hardware", c: "Bias dan Keadilan", d: "Ukuran data", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Teknologi yang 100x lebih cepat dari 4G adalah...", a: "3G", b: "LTE", c: "5G", d: "Fiber Optic", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "YouTube awalnya dirancang sebagai...", a: "Mesin pencari", b: "Situs kencan berbasis video", c: "Platform edukasi", d: "Media sosial teks", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa yang mengemukakan istilah 'Cloud Computing' tahun 2000?", a: "Bill Gates", b: "John McCarthy", c: "Jeff Bezos", d: "Mark Zuckerberg", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Ciri utama era Pra-Mekanis?", a: "Listrik", b: "Simbol &amp; tulisan di batu/papirus", c: "Komputer PC", d: "Mesin cetak", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Mesin cetak ditemukan Johannes Gutenberg pada era...", a: "Pra-Mekanis", b: "Mekanis", c: "Elektronik", d: "Digital", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Penerapan AI memprediksi rute lalu lintas disebut...", a: "Smart Spam", b: "Smart Navigation", c: "Recommendation", d: "Facial Recognition", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Deep Learning adalah bagian dari...", a: "Hardware", b: "Machine Learning", c: "OS", d: "Brainware", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Dampak negatif TIK adalah...", a: "Efisiensi", b: "Akses cepat", c: "Penyebaran hoaks", d: "PJJ", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Google Gemini diluncurkan pada tahun...", a: "2020", b: "2022", c: "2024", d: "2026", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Sistem merespons hanya input saat ini tanpa memori masa lalu disebut...", a: "Limited Memory", b: "Reactive Machines", c: "Theory of Mind", d: "Self-Aware", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Dalam sejarah internet, Mosaic adalah nama...", a: "Protokol", b: "Browser web awal", c: "ISP", d: "Kabel", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Pencipta istilah Internet of Things (IoT) berasal dari...", a: "Stanford", b: "MIT", c: "Oxford", d: "UI", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Manfaat AI di bidang kesehatan adalah...", a: "Main game", b: "Diagnosis penyakit akurat", c: "Nulis puisi", d: "Bayar tagihan", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Domain '.com' mulai populer pada era...", a: "1970-an", b: "1980-an", c: "1990-an", d: "2010-an", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Faktor pendorong perkembangan AI adalah...", a: "Kurangnya data", b: "Komputer lambat", c: "Data digital besar &amp; chip kuat", d: "Tidak ada saingan", correct: "c" },</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Bagian 2: Hardware &amp; Software</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Menurut Donald Sanders, komputer adalah sistem elektronik untuk memanipulasi data yang...", a: "Lambat", b: "Cepat dan tepat", c: "Mahal", d: "Statis", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Bagian Hardware komputer KECUALI...", a: "Input", b: "Pemroses", c: "Output", d: "Alat Berpikir", correct: "d" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Contoh alat input komputer adalah...", a: "Monitor", b: "Printer", c: "Keyboard", d: "Speaker", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Unit pusat pengolah data dan 'otak' komputer adalah...", a: "RAM", b: "CPU", c: "Harddisk", d: "Power Supply", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Memori sementara yang isinya hilang jika listrik padam disebut...", a: "ROM", b: "RAM (Volatile)", c: "SSD", d: "Flashdisk", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Perangkat untuk mencetak hasil pengolahan data adalah...", a: "Scanner", b: "Printer", c: "Monitor", d: "Mouse", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Perbedaan utama SSD dibanding HDD?", a: "SSD lambat", b: "SSD magnetik", c: "SSD pakai chip &amp; lebih cepat", d: "SSD lebih murah", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Software pengelola sumber daya hardware dan fondasi aplikasi disebut...", a: "Aplikasi", b: "Sistem Operasi (OS)", c: "Programming", d: "Driver", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Manakah contoh Sistem Operasi?", a: "MS Word", b: "Linux", c: "Chrome", d: "Photoshop", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Software yang kodenya terbuka dan bisa dimodifikasi siapa saja disebut...", a: "Proprietary", b: "Open Source", c: "Closed Source", d: "Freeware", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Brainware dalam sistem komputer merujuk pada...", a: "Kabel", b: "Manusia pengoperasi", c: "Chip", d: "Antivirus", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Orang yang membuat program atau aplikasi komputer disebut...", a: "Analyst", b: "Programmer", c: "Administrator", d: "Operator", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Brainware yang menganalisis dan merancang sistem disebut...", a: "Programmer", b: "System Analyst", c: "User", d: "Tech Support", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Lisensi CC 'BY' mewajibkan pengguna untuk...", a: "Bayar", b: "Cantumkan atribusi", c: "Dilarang sebar", d: "Ubah total", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Lisensi yang melarang penggunaan karya untuk keuntungan materi adalah...", a: "BY", b: "Non-Komersial (NC)", c: "ND", d: "SA", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Apa kepanjangan dari URL?", a: "Uniform Resource Locator", b: "Universal Road Link", c: "Unit Resource", d: "Uniform Road", correct: "a" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Alamat unik pengidentifikasi perangkat di internet disebut...", a: "MAC", b: "IP Address", c: "Home", d: "Email", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Sistem penerjemah nama domain menjadi alamat IP disebut...", a: "HTTP", b: "DNS", c: "FTP", d: "ISP", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Proses memecah data menjadi bagian kecil untuk dikirim melalui internet disebut...", a: "Fragmentasi", b: "Packets", c: "Routing", d: "Bandwidth", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Perangkat pengelola lalu lintas data antar jaringan internet disebut...", a: "Modem", b: "Router", c: "Switch", d: "LAN", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Pihak pemberi layanan akses internet disebut...", a: "Browser", b: "ISP", c: "Web Hosting", d: "Search Engine", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Apa definisi Internet?", a: "Komputer tunggal", b: "Jaringan besar global yang saling terhubung", c: "Aplikasi chat", d: "Nama perusahaan", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Tata Kelola Internet adalah pengembangan bersama atas...", a: "Hardware", b: "Prinsip, norma, aturan, dan prosedur", c: "Kabel saja", d: "Akun sosmed", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa yang terlibat dalam model Multi-stakeholder?", a: "Hanya pemerintah", b: "Hanya swasta", c: "Gov, Swasta, Sipil, Akademisi", d: "Individu", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Deklarasi tata kelola internet Indonesia tahun 2012 adalah...", a: "Jakarta", b: "Bali", c: "Bandung", d: "Surabaya", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Pilar Deklarasi Bali adalah HAM dan...", a: "Monopoli", b: "Demokrasi", c: "Sensor", d: "Pembatasan", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Prinsip ISP harus perlakukan semua data setara disebut...", a: "Net Neutrality", b: "Digital Divide", c: "Privacy", d: "Cyber Security", correct: "a" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Unit terkecil informasi digital adalah...", a: "Byte", b: "Bit", c: "KB", d: "MB", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "1 Byte terdiri dari berapa Bit?", a: "4", b: "8", c: "16", d: "32", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Data digital komputer diproses dalam angka...", a: "0 dan 1 (Biner)", b: "1-10", c: "A-Z", d: "Simbol", correct: "a" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Perangkat output visual langsung adalah...", a: "Printer", b: "Monitor", c: "Scanner", d: "Keyboard", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Manakah yang termasuk Software Aplikasi?", a: "Windows 11", b: "Linux", c: "Microsoft Excel", d: "MacOS", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Fungsi utama Modem?", a: "Simpan data", b: "Ubah sinyal digital ke analog &amp; sebaliknya", c: "Cetak", d: "Ketik", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Penyimpanan permanen piringan magnetik adalah...", a: "RAM", b: "Harddisk (HDD)", c: "ROM", d: "Cache", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Sistem Operasi smartphone open source adalah...", a: "iOS", b: "Android", c: "Windows Phone", d: "Blackberry", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Apa kepanjangan HTTPS?", a: "Hypertext Transfer Protocol Secure", b: "High Text", c: "Hyperlink", d: "Transmission", correct: "a" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Badan internasional pengelola alamat IP adalah...", a: "UNESCO", b: "ICANN", c: "WTO", d: "WHO", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Lisensi CC 'Share Alike' (SA) berarti...", a: "Tidak boleh bagi", b: "Karya baru harus lisensi sama", c: "Boleh jual", d: "Hapus nama", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Alat output suara adalah...", a: "Webcam", b: "Microphone", c: "Speaker", d: "Plotter", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Komponen penghubung semua perangkat keras adalah...", a: "Processor", b: "Motherboard", c: "Power Supply", d: "Casing", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Data yang sudah diolah dan memiliki arti disebut...", a: "Metadata", b: "Informasi", c: "Input", d: "Program", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Kumpulan instruksi untuk komputer disebut...", a: "Hardware", b: "Software", c: "Brainware", d: "Malware", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Isu 'Digital Divide' merujuk pada...", a: "Bandwidth adil", b: "Kesenjangan akses internet", c: "Putus kabel", d: "Harga laptop", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Tanggung Jawab Negara dalam Deklarasi Bali adalah...", a: "Jual kuota", b: "Lindungi hak warga di ruang digital", c: "Buat sosmed", d: "Beli hardware", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Windows dan Photoshop adalah contoh software lisensi...", a: "Open Source", b: "Proprietary", c: "Freeware", d: "Public Domain", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Perangkat penyuplai daya ke seluruh komponen adalah...", a: "UPS", b: "Power Supply Unit (PSU)", c: "Stabilizer", d: "Battery", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Istilah 'Cyberspace' menggambarkan...", a: "Hampa udara", b: "Dunia virtual/elektronik terhubung", c: "Kantor ISP", d: "Harddisk", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Web browser dari Google adalah...", a: "Firefox", b: "Chrome", c: "Safari", d: "Edge", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Perangkat pembaca fisik ke digital adalah...", a: "Printer", b: "Scanner", c: "Monitor", d: "Projector", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "IGF (Internet Governance Forum) adalah wadah...", a: "Jual domain", b: "Dialog kebijakan tata kelola", c: "Hukum", d: "Hukum siber", correct: "b" },</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Bagian 3: Tata Kelola Lanjutan</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Definisi Tata Kelola Internet menurut WSIS?", a: "Aturan AS", b: "Prinsip, norma, aturan bersama", c: "Jual bandwidth", d: "Protokol Wi-Fi", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Model tata kelola Gov, Swasta, Sipil, Teknis disebut...", a: "Unilateral", b: "Bilateral", c: "Multi-stakeholder", d: "Otokrasi", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Organisasi koordinasi teknis DNS dan IP global adalah...", a: "UNESCO", b: "ICANN", c: "WTO", d: "IMF", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Manakah yang termasuk Lapisan Infrastruktur Fisik?", a: "Hak cipta", b: "Kabel optik, satelit", c: "HTTP &amp; IP", d: "Privasi", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Peran IETF dalam internet?", a: "Buat UU", b: "Kembangkan standar &amp; protokol terbuka", c: "Harga data", d: "Tangkap hacker", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "IGF yang difasilitasi PBB berfungsi sebagai...", a: "Badan hukum", b: "Wadah dialog kebijakan publik", c: "Pengadilan domain", d: "Pusat mati internet", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Mengapa sektor swasta penting dalam tata kelola?", a: "Bisa sensor", b: "Bangun infrastruktur &amp; inovasi", c: "Militer", d: "Pembuat UU", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Isu HAM dan kebebasan berekspresi ada di lapisan...", a: "Fisik", b: "Logika", c: "Konten dan Sosial", d: "Kabel", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Apa itu 'Logical Layer'?", a: "Mouse", b: "Protokol &amp; pengalamatan", c: "Gedung ISP", d: "Perasaan user", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Masyarakat Sipil berperan untuk...", a: "Untung uang", b: "Suarakan kepentingan publik &amp; HAM", c: "Database militer", d: "Jual hardware", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Peran ITU dalam tata kelola?", a: "Penguasa", b: "Koordinasi standar telekomunikasi global", c: "Buat HP", d: "Relawan video", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Konsep 'Interoperabilitas' berarti...", a: "Satu negara", b: "Sistem berbeda bisa komunikasi &amp; kerja sama", c: "Larangan aplikasi", d: "Satu bahasa", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Isu ekonomi tata kelola internet adalah...", a: "Ketik cepat", b: "E-commerce &amp; pajak digital", c: "Ukuran layar", d: "Warna logo", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Tantangan model Multi-stakeholder?", a: "Terlalu cepat", b: "Menyeimbangkan kepentingan berbeda", c: "Dilarang bicara", d: "Hanya Gov", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Isu keamanan siber mencakup KECUALI...", a: "Infrastruktur kritis", b: "Malware", c: "Harga jual laptop di toko", d: "Kerja sama siber", correct: "c" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Siapa pengelola alamat IP regional (seperti APNIC)?", a: "Pemda", b: "Regional Internet Registries (RIRs)", c: "Toko elektron", d: "Operator", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Prinsip 'End-to-end' berarti kecerdasan jaringan ada di...", a: "Pusat (Gov)", b: "Ujung-ujung (perangkat pengguna)", c: "Batas negara", d: "Dihapus tiap hari", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Mengapa standar terbuka (Open Standards) penting?", a: "Satu perusahaan", b: "Agar semua bisa inovasi &amp; terhubung", c: "Mahal", d: "Blokir akses", correct: "b" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Tata kelola internet unik karena...", a: "Tidak ada entitas tunggal pengendali", b: "Dikendali Jenewa", c: "Hukum satu negara", d: "Tanpa aturan", correct: "a" },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>{ q: "Tujuan akhir tata kelola internet agar internet tetap...", a: "Tertutup", b: "Terbuka, aman, stabil, aksesibel", c: "Kabel telepon", d: "Media iklan", correct: "b" }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let selectedQuestions = [];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function startQuiz() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const name = document.getElementById('userName').value;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const npm = document.getElementById('userNPM').value;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>if (!name || !npm) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>alert("Harap masukkan NAMA dan NPM Anda!");</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Simpan info user</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('header-info').innerText = `Peserta: ${name} | NPM: ${npm}`;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Acak dan Ambil 20 Soal</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>selectedQuestions = bankSoal.sort(() =&gt; 0.5 - Math.random()).slice(0, 20);</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>displayQuestions();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('setup').classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('quiz-area').classList.remove('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.scrollTo(0,0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function displayQuestions() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const container = document.getElementById('questions-container');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>container.innerHTML = "";</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>selectedQuestions.forEach((item, index) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const qDiv = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>qDiv.className = 'question';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>qDiv.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;&lt;strong&gt;Soal ${index + 1}:&lt;/strong&gt; ${item.q}&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="options"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label&gt;&lt;input type="radio" name="q${index}" value="a"&gt; a. ${item.a}&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label&gt;&lt;input type="radio" name="q${index}" value="b"&gt; b. ${item.b}&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label&gt;&lt;input type="radio" name="q${index}" value="c"&gt; c. ${item.c}&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;label&gt;&lt;input type="radio" name="q${index}" value="d"&gt; d. ${item.d}&lt;/label&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>container.appendChild(qDiv);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function calculateScore() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let correctCount = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>selectedQuestions.forEach((item, index) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const answer = document.querySelector(`input[name="q${index}"]:checked`);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (answer &amp;&amp; answer.value === item.correct) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>correctCount++;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const score = (correctCount / 20) * 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const name = document.getElementById('userName').value;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('quiz-area').classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('result-area').classList.remove('hidden');</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('summary-text').innerText = `Selamat ${name}, kuis telah selesai!`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('final-score').innerText = score;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.getElementById('correct-count').innerText = `Jawaban Benar: ${correctCount} dari 20 soal.`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.scrollTo(0,0);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
